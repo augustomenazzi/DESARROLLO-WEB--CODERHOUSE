@@ -562,6 +562,18 @@
 }
 
 
+.contacto__box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 
+    p{
+        font-family: $fuenteprincipal;
+        font-size: 20px;
+        color: black;
+    }
+
+}
 
 

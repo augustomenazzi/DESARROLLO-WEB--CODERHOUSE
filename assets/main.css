@@ -855,6 +855,18 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.contacto__box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contacto__box p {
+  font-family: "New Rocker", cursive;
+  font-size: 20px;
+  color: black;
+}
+
 #footer {
   margin-top: 50vh;
   display: flex;
