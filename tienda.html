@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KA$CO</title>
-       
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Caveat&family=Lexend+Tera&family=Major+Mono+Display&family=New+Rocker&display=swap" rel="stylesheet">
-    
-        <link rel="stylesheet" href="assets/style.css">
-        <link rel="shortcut icon" href="assets/img/logochico.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Caveat&family=Lexend+Tera&family=Major+Mono+Display&family=New+Rocker&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="shortcut icon" href="assets/img/logochico.png">
 
 </head>
 <style>a {text-decoration: none;}</style>
@@ -31,10 +34,10 @@
         <header id="header">
         
             <div class="btn__menu">
-        
+            
                 <label for="btn__menu"><img src="assets/img/menu.png" class="header__logo"></label>
-        
-        
+            
+            
             </div>
         
             <input type="checkbox" id="btn__menu">
@@ -70,7 +73,8 @@
             <div class="header--rare">
             
                 <div class="search-box">
-                    <button class="btn-search"><img src="assets/img/search.png"></button>
+                    <button class="btn-search"><img src="assets/img/search.png" class="header__logo"></button>
+
                     <input type="text" class="input-search" placeholder="Buscar...">
                 </div>
             
@@ -92,7 +96,7 @@
             
                 </div>
             
-                <div>
+                <div class="header__user">
                     <a href="#">
                         <img src="assets/img/user.png" class="header__logo">
             
@@ -102,12 +106,13 @@
             
             </div>
         
-            <a href="#">
-                <img src="assets/img/carrito.png" class="header__logo">
-        
-        
-            </a>
-        
+            <div class="header__carrito">
+                <a href="#">
+                    <img src="assets/img/carrito.png" class="header__logo">
+            
+            
+                </a>
+            </div>
         
         
         </header>
@@ -116,25 +121,201 @@
 
         <section id="menu--rare">
         
-            <div class="menu--rare">
+            <div class="menu__texto--rare">
+        
+                <div class="texto__vertical">
+                    <p>TIENDA</p>
         
         
-                <div class="menu__texto--rare">
+                </div>
         
-                    <div class="texto__vertical">TIENDA</div>
-        
-                    <div class="menu__logo--rare"><a href="index.html">KA$CO</a></div>
-            
+                <div class="menu__logo--rare">
+                    <a href="index.html">KA$CO</a>
         
                 </div>
         
         
             </div>
         
-        
         </section>
-
-
+        
+        <main id="main">
+            <div class="main--tienda">
+                <div class="main__filter">
+        
+                    <nav class="navbar bg-transparent">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2 bg-dark-subtle fw-bold" type="search" placeholder="Buscar..."
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success border border-primary bg-dark-subtle fw-bold text-black"
+                                    type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </nav>
+        
+                    <div class="dropdown-center">
+                        <button
+                            class="btn btn-secondary dropdown-toggle border border-primary bg-dark-subtle fw-bold text-black"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ordenar
+                        </button>
+                        <ul class="dropdown-menu border border-primary">
+                            <li><a class="dropdown-item fw-bold text-black" href="#">Mas populares</a></li>
+                            <li><a class="dropdown-item fw-bold text-black" href="#">Precio descendente</a></li>
+                            <li><a class="dropdown-item fw-bold text-black" href="#">Precio ascendente</a></li>
+                        </ul>
+        
+                    </div>
+        
+                    <div class="dropdown__mobil__filter">
+                        <button
+                            class="btn btn-secondary dropdown-toggle border border-primary bg-dark-subtle fw-bold text-black"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Filtrar
+                        </button>
+                        <ul class="dropdown-menu border border-primary">
+                            <li><a class="dropdown-item fw-bold text-black" href="#">PANTALONES</a></li>
+                            <li><a class="dropdown-item fw-bold text-black" href="#">HODDIES</a></li>
+                            <li><a class="dropdown-item fw-bold text-black" href="#">REMERAS</a></li>
+                            <li><a class="dropdown-item fw-bold text-black" href="#">VER TODO</a></li>
+                        </ul>
+        
+                    </div>
+        
+        
+                </div>
+        
+                <div class="div__cat">
+        
+                    <ul class="div__cat__box">
+        
+                        <li class="cat__box__text"><a href="#">PANTALONES</a></li>
+                        <li class="cat__box__text"><a href="#">HODDIES</a></li>
+                        <li class="cat__box__text"><a href="#">REMERAS</a></li>
+                        <li class="cat__box__text"><a href="#">VER TODO</a></li>
+        
+                    </ul>
+        
+                </div>
+        
+                <div class="main__opt">
+        
+                    <div class="main__opt__box">
+                        <a href="#"><img src="assets/img/buzo1.png" class="main__opt__img">
+        
+                            <ul class="box__text_img">
+                                <li class="text_img">Nombre del producto</li>
+                                <li>Precio</li>
+        
+                            </ul>
+        
+                        </a>
+        
+                    </div>
+        
+        
+                    <div class="main__opt__box">
+                        <a href="#"><img src="assets/img/buzo1.png" class="main__opt__img">
+        
+                            <ul class="box__text_img">
+                                <li class="text_img">Nombre del producto</li>
+                                <li>Precio</li>
+        
+                            </ul>
+        
+                        </a>
+        
+                    </div>
+        
+        
+                    <div class="main__opt__box">
+                        <a href="#"><img src="assets/img/buzo1.png" class="main__opt__img">
+        
+                            <ul class="box__text_img">
+                                <li class="text_img">Nombre del producto</li>
+                                <li>Precio</li>
+        
+                            </ul>
+        
+                        </a>
+        
+                    </div>
+        
+        
+                    <div class="main__opt__box">
+                        <a href="#"><img src="assets/img/buzo1.png" class="main__opt__img">
+        
+                            <ul class="box__text_img">
+                                <li class="text_img">Nombre del producto</li>
+                                <li>Precio</li>
+        
+                            </ul>
+        
+                        </a>
+        
+                    </div>
+        
+        
+                    <div class="main__opt__box">
+                        <a href="#"><img src="assets/img/buzo1.png" class="main__opt__img">
+        
+                            <ul class="box__text_img">
+                                <li class="text_img">Nombre del producto</li>
+                                <li>Precio</li>
+        
+                            </ul>
+        
+                        </a>
+        
+                    </div>
+        
+        
+                    <div class="main__opt__box">
+                        <a href="#"><img src="assets/img/buzo1.png" class="main__opt__img">
+        
+                            <ul class="box__text_img">
+                                <li class="text_img">Nombre del producto</li>
+                                <li>Precio</li>
+        
+                            </ul>
+        
+                        </a>
+        
+        
+                    </div>
+        
+        
+                    <div class="main__opt__box">
+                        <a href="#"><img src="assets/img/buzo1.png" class="main__opt__img">
+        
+                            <ul class="box__text_img">
+                                <li class="text_img">Nombre del producto</li>
+                                <li>Precio</li>
+        
+                            </ul>
+        
+                        </a>
+        
+                    </div>
+        
+                    <div class="main__opt__box">
+                        <a href="#"><img src="assets/img/buzo1.png" class="main__opt__img">
+        
+                            <ul class="box__text_img">
+                                <li class="text_img">Nombre del producto</li>
+                                <li>Precio</li>
+        
+                            </ul>
+        
+                        </a>
+        
+                    </div>
+        
+                </div>
+            </div>
+        
+        </main>
 
         <footer id="footer">
         
@@ -164,6 +345,10 @@
         </footer>
 
     </div>    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>

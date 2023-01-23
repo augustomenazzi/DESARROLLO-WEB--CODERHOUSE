@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KA$CO</title>
-       
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Caveat&family=Lexend+Tera&family=Major+Mono+Display&family=New+Rocker&display=swap" rel="stylesheet">
-    
-        <link rel="stylesheet" href="assets/style.css">
-        <link rel="shortcut icon" href="assets/img/logochico.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Caveat&family=Lexend+Tera&family=Major+Mono+Display&family=New+Rocker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="shortcut icon" href="assets/img/logochico.png">
 
 </head>
 <style>a {text-decoration: none;}</style>
@@ -20,6 +21,7 @@
 <body>
 
     <div id="contenedor">
+        
         <section id="toptext">
             <span>
                 <marquee direction="right" scrollamount=25 class="texto__movimiento">10% OFF PAGANDO EN EFECTIVO O TRANSFERENCIA BANCARIA</marquee>
@@ -30,10 +32,10 @@
         <header id="header">
         
             <div class="btn__menu">
-        
+            
                 <label for="btn__menu"><img src="assets/img/menu.png" class="header__logo"></label>
-        
-        
+            
+            
             </div>
         
             <input type="checkbox" id="btn__menu">
@@ -67,41 +69,48 @@
         
         
             <div class="header--rare">
-        
+            
                 <div class="search-box">
-                    <button class="btn-search"><img src="assets/img/search.png"></button>
+                    <button class="btn-search"><img src="assets/img/search.png" class="header__logo"></button>
+
                     <input type="text" class="input-search" placeholder="Buscar...">
                 </div>
-        
-        
-                <p class="header__texto__ks">K$</p>
-
+            
+            
+                <div class="header__texto__marca">
+                    <a href="index.html">
+                        <p class="header__texto__ks">K$</p>
+                    </a>
+                </div>
+            
                 <div class="header__texto">
-
+            
                     <a href="#">
                         <p>Crear cuenta</p>
                     </a>
                     <a href="#">
                         <p>Iniciar Sesión</p>
                     </a>
-        
+            
                 </div>
-        
-                <a href="#">
-                    <img src="assets/img/user.png" class="header__logo">
-        
-        
-                </a>
-        
-        
+            
+                <div class="header__user">
+                    <a href="#">
+                        <img src="assets/img/user.png" class="header__logo">
+            
+            
+                    </a>
+                </div>
+            
             </div>
         
-            <a href="#">
-                <img src="assets/img/carrito.png" class="header__logo">
-        
-        
-            </a>
-        
+            <div class="header__carrito">
+                <a href="#">
+                    <img src="assets/img/carrito.png" class="header__logo">
+            
+            
+                </a>
+            </div>
         
         
         </header>
@@ -110,17 +119,61 @@
 
         <section id="menu--rare">
         
-            <div class="menu--rare">
-                <div class="menu__texto__vertical">
-                    <span class="texto__vertical">SOBRE⠀NOSOTROS</span>
+            <div class="menu__texto--rare">
+        
+                <div class="texto__vertical">
+                    <p>SOBRE⠀NOSOTROS</p>
+        
+        
                 </div>
-    
+        
+                <div class="menu__logo--rare">
+                    <a href="index.html">KA$CO</a>
+        
+                </div>
+        
+        
             </div>
         
-        
         </section>
-
-
+        
+        <main id="main">
+            <div class="main__sobrenos">
+        
+                <div class="sobrenos__box">
+                    <p class="sobrenos__box_ti">SOBRE NOSOTROS</p>
+        
+                </div>
+        
+        
+                <div class="sobrenos__box__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid vel, reiciendis minus neque
+                        accusamus rerum eligendi ad nesciunt maiores vitae ducimus illum, dolorum animi eveniet, deserunt itaque
+                        ratione est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima, voluptatem
+                        possimus corporis sint perspiciatis tempore itaque velit deserunt quas ex sit deleniti quaerat accusamus
+                        iste quasi voluptas, illum libero?
+                    </p>
+        
+        
+                </div>
+        
+                <div class="sobrenos__box__img">
+        
+                    <div class="sobrenos__img">
+        
+                        <a href="#"><img src="assets/img/buzo1.png" class="sobrenos__img"></a>
+                    </div>
+        
+                    <div class="sobrenos__img">
+                        <a href="#"><img src="assets/img/buzo1.png" class="sobrenos__img"></a>
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+        
+        </main>
 
         <footer id="footer">
         
@@ -150,6 +203,7 @@
         </footer>
 
     </div>    
+
 
 </body>
 </html>
