@@ -13,10 +13,18 @@
 }
 
 body {
-  background-image: url(img/tormenta4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  margin: 0;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
 }
 
 #contenedor {
@@ -54,14 +62,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  border-radius: 1000px;
-  background: #82AAFB;
+  background: grey;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: black;
   border-radius: 20px;
-  border: 2px solid #82AAFB;
+  border: 2px solid gray;
 }
 
 /*toptext*/
@@ -113,7 +120,7 @@ body::-webkit-scrollbar-thumb {
 #header .container__menu .cont__menu {
   width: 100%;
   height: 100%;
-  background-image: url(img/tormenta.jpg);
+  background-image: url(img/fondosidebar.jpg);
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -137,7 +144,7 @@ body::-webkit-scrollbar-thumb {
 }
 #header .container__menu .cont__menu nav a:hover {
   border-left: 5px solid black;
-  background-color: #82AAFB;
+  background-color: #1A9D00;
 }
 @media only screen and (min-width: 768px) {
   #header .container__menu .cont__menu nav a {
@@ -265,7 +272,7 @@ body::-webkit-scrollbar-thumb {
   font-family: "New Rocker", cursive;
   font-size: 50px;
   color: black;
-  text-shadow: 0px 0px 10px #82AAFB;
+  text-shadow: 0px 0px 10px #1A9D00;
 }
 @media only screen and (min-width: 768px) {
   #header .header--rare .header__texto__marca p {
@@ -295,6 +302,7 @@ body::-webkit-scrollbar-thumb {
 #header .header--rare .header__texto a:hover {
   color: white;
   transition: all 0.2s ease-in-out;
+  text-shadow: 0px 0px 10px #1A9D00;
 }
 @media only screen and (min-width: 900px) {
   #header .header--rare .header__texto {
@@ -321,7 +329,7 @@ body::-webkit-scrollbar-thumb {
   font-family: "New Rocker", cursive;
   text-decoration: none;
   color: black;
-  text-shadow: 0px 0px 10px #82AAFB;
+  text-shadow: 0px 0px 10px #1A9D00;
   margin-top: 155px;
 }
 @media only screen and (min-width: 768px) {
@@ -330,16 +338,20 @@ body::-webkit-scrollbar-thumb {
     font-family: "New Rocker", cursive;
     text-decoration: none;
     color: black;
-    text-shadow: 0px 0px 10px #82AAFB;
+    text-shadow: 0px 0px 10px #1A9D00;
     margin-top: 155px;
   }
+}
+.menu .box__menu__logo a p:hover {
+  filter: invert(1);
+  transition: all 500ms;
 }
 .menu .menu__texto {
   color: black;
   font-size: 20px;
   font-family: "New Rocker", cursive;
   margin-top: 5px;
-  text-shadow: 0px 0px 10px #82AAFB;
+  text-shadow: 0px 0px 10px #1A9D00;
 }
 @media only screen and (min-width: 768px) {
   .menu .menu__texto {
@@ -347,7 +359,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 25px;
     font-family: "New Rocker", cursive;
     margin-top: 5px;
-    text-shadow: 0px 0px 10px #82AAFB;
+    text-shadow: 0px 0px 10px #1A9D00;
+  }
+  .menu .menu__texto:hover {
+    filter: invert(1);
+    transition: all 500ms;
   }
 }
 
@@ -361,19 +377,19 @@ body::-webkit-scrollbar-thumb {
 #menu--rare .menu__texto--rare .texto__vertical {
   width: 1%;
   height: 180px;
-  margin-left: 10.5%;
+  margin-left: 10.8%;
 }
 #menu--rare .menu__texto--rare .texto__vertical p {
   word-wrap: break-word;
   text-align: center;
   font-size: 20px;
   font-family: "New Rocker", cursive;
+  text-shadow: 0px 0px 10px #1A9D00;
   margin: 0;
 }
 #menu--rare .menu__texto--rare .texto__vertical:hover {
   filter: invert(1);
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
+  transition: all 500ms;
 }
 #menu--rare .menu__texto--rare .menu__logo--rare {
   width: 100%;
@@ -387,7 +403,11 @@ body::-webkit-scrollbar-thumb {
   font-family: "New Rocker", cursive;
   text-decoration: none;
   color: black;
-  text-shadow: 0px 0px 10px #82AAFB;
+  text-shadow: 0px 0px 10px #1A9D00;
+}
+#menu--rare .menu__texto--rare .menu__logo--rare a:hover {
+  filter: invert(1);
+  transition: all 500ms;
 }
 @media only screen and (min-width: 768px) {
   #menu--rare .menu__texto--rare {
@@ -403,7 +423,8 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   gap: 5px;
 }
 @media only screen and (min-width: 768px) {
@@ -436,8 +457,8 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 .main--tienda .div__cat ul li:hover a {
-  filter: invert(1);
-  transition: all 300ms;
+  transition: all 500ms;
+  text-shadow: 0px 0px 10px #1A9D00;
 }
 .main--tienda .div__cat ul li a {
   font-style: none;
@@ -469,6 +490,7 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (min-width: 768px) {
   .main--tienda .main__opt {
     gap: 60px;
+    margin-top: 60px;
   }
 }
 .main--tienda .main__opt .main__opt__box {
@@ -540,7 +562,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
   color: black;
   font-style: none;
-  text-shadow: 0px 0px 10px #82AAFB;
+  text-shadow: 0px 0px 10px #1A9D00;
 }
 @media only screen and (min-width: 768px) {
   .main--cuidadop .main__cuidadop__box p {
@@ -643,7 +665,7 @@ body::-webkit-scrollbar-thumb {
   height: 60px;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  background: linear-gradient(90deg, rgb(9, 10, 14) 0%, rgb(44, 62, 102) 100%);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(18, 168, 0) 50%, rgb(0, 0, 0) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -779,7 +801,7 @@ body::-webkit-scrollbar-thumb {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #82AAFB;
+  border-bottom: 1px solid #1A9D00;
   resize: none;
 }
 .cambiosdev__form input:focus,
@@ -820,12 +842,12 @@ body::-webkit-scrollbar-thumb {
   width: 0%;
   bottom: 0;
   position: absolute;
-  background: #82AAFB;
+  background: #1A9D00;
   transition: 0.3s ease all;
   left: 0%;
 }
 .cambiosdev__form button {
-  background: #82AAFB;
+  background: #1A9D00;
   display: block;
   width: 100px;
   height: 40px;
@@ -907,7 +929,7 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
   font-size: 80%;
   font-family: "New Rocker", cursive;
-  text-shadow: 0px 0px 20px white;
+  text-shadow: 0px 0px 20px #1A9D00;
 }
 @media screen and (min-width: 910px) {
   .contacto__box .contacto__box__my .contacto__box__izq .contacto__text {
@@ -934,7 +956,7 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
   font-size: 80%;
   font-family: "New Rocker", cursive;
-  text-shadow: 0px 0px 20px white;
+  text-shadow: 0px 0px 20px #1A9D00;
 }
 @media screen and (min-width: 910px) {
   .contacto__box .contacto__box__my .contacto__box__der .contacto__text {
@@ -956,7 +978,7 @@ body::-webkit-scrollbar-thumb {
   padding-top: 10px;
   font-size: 70%;
   font-family: "New Rocker", cursive;
-  text-shadow: 0px 0px 20px white;
+  text-shadow: 0px 0px 20px #1A9D00;
 }
 @media screen and (min-width: 900px) {
   .contacto__box .contacto__box__my p {
@@ -998,7 +1020,7 @@ body::-webkit-scrollbar-thumb {
 .contacto__final p {
   font-size: 17px;
   font-family: "New Rocker", cursive;
-  text-shadow: 0px 0px 20px white;
+  text-shadow: 0px 0px 20px #1A9D00;
 }
 
 #footer {

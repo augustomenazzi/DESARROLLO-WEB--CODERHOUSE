@@ -24,6 +24,11 @@
                 margin-top: 155px;
             }
 
+            &:hover{
+                filter: invert(1);
+                transition: all 500ms;
+            }
+
         }
 
     }  
@@ -41,6 +46,11 @@
             font-family: $fuenteprincipal;
             margin-top: 5px;
             text-shadow: 0px 0px 10px $color-shadow;
+
+            &:hover{
+                filter: invert(1);
+                transition: all 500ms;
+            }
 
         }
 
@@ -60,22 +70,21 @@
         .texto__vertical {
             width: 1%;
             height: 180px;
-            margin-left: 10.5%;
+            margin-left: 10.8%;
 
             p {
                 word-wrap: break-word;
                 text-align: center;
                 font-size: 20px;
                 font-family: $fuenteprincipal;
+                text-shadow: 0px 0px 10px $color-shadow;
                 margin: 0;
 
             }
 
-            &:hover {
+            &:hover{
                 filter: invert(1);
-                transition: all .2s ease-in-out;
-                cursor: pointer;
-
+                transition: all 500ms;
             }
 
         }
@@ -93,6 +102,11 @@
                 text-decoration: none;
                 color: black;
                 text-shadow: 0px 0px 10px $color-shadow;
+
+                &:hover{
+                    filter: invert(1);
+                    transition: all 500ms;
+                }
 
             }
 

@@ -1,7 +1,7 @@
 //variables
 
 $fuenteprincipal: 'New Rocker', cursive;
-$color-shadow: #82AAFB;
+$color-shadow: #1A9D00;
 $box-shadow: 0px 0px 11px 9px rgba(0,0,0,0.9);
 
 
@@ -14,7 +14,7 @@ $box-shadow: 0px 0px 11px 9px rgba(0,0,0,0.9);
     
  }
 
-:root{
+:root {
     --Fuente1: 'Caveat', cursive;
     --Fuente2: 'New Rocker', cursive;
     --Fuente3: 'Major Mono Display', monospace;
@@ -24,17 +24,22 @@ $box-shadow: 0px 0px 11px 9px rgba(0,0,0,0.9);
 }
 
 
-body{
-    
-    background-image: url(img/tormenta4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    
+body {
+    position: relative;
+    margin: 0;
     
 }
 
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+    
+}
 
 
 #contenedor{
@@ -80,17 +85,16 @@ body{
 
 /*scrollbar*/
 body::-webkit-scrollbar {
-    width: 8px; 
-    height: 8px;              
-  }
-  
-  body::-webkit-scrollbar-track {
-      border-radius: 1000px;       
-      background: $color-shadow;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-      background-color: black;
-      border-radius: 20px;
-      border: 2px solid $color-shadow;
-  }
+    width: 8px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: grey;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid gray;
+}
