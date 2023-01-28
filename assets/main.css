@@ -464,7 +464,7 @@ body::-webkit-scrollbar-thumb {
 .main--tienda .div__cat ul li a {
   font-style: none;
   color: white;
-  font-family: "New Rocker", cursive;
+  font-family: "Bungee", cursive;
   font-size: 16px;
 }
 @media only screen and (min-width: 1190px) {
@@ -534,7 +534,7 @@ body::-webkit-scrollbar-thumb {
 }
 .main--tienda .main__opt .main__opt__box a ul li {
   list-style: none;
-  font-family: "New Rocker", cursive;
+  font-family: "Bungee", cursive;
   color: white;
   font-size: 14px;
 }
@@ -557,7 +557,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 50px;
 }
 .main--cuidadop .main__cuidadop__box p {
-  font-family: "New Rocker", cursive;
+  font-family: "Bungee", cursive;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -607,7 +607,7 @@ body::-webkit-scrollbar-thumb {
 .main--cuidadop .div__cat .div__cat__box li a {
   font-style: none;
   color: white;
-  font-family: "New Rocker", cursive;
+  font-family: "Bungee", cursive;
   font-size: 16px;
 }
 @media only screen and (min-width: 768px) {

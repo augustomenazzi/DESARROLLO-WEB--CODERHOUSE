@@ -1,6 +1,5 @@
-@import "_commons";
-@import "_toptext";
-@import "_header";
-@import "_menu";
-@import "_content";
-@import "_footer";
+@use "_toptext";
+@use "_header";
+@use "_menu";
+@use "_content";
+@use "_footer";
